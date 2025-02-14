@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marnix Leijder | Information Security Specialist</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="matrix-bg"></div>
+    
+    <!-- Add Modal -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <img src="assets/images/profile.jpg" 
+             alt="Marnix Leijder" 
+             class="modal-content">
+    </div>
+
+    <header>
+        <nav>
+            <div class="nav-brand">Marnix Leijder</div>
+            <button class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="glitch-container">
+                        <h1 class="glitch" data-text="MARNIX LEIJDER">MARNIX LEIJDER</h1>
+                    </div>
+                    <p class="subtitle">Information Security Management Student</p>
+                </div>
+                <div class="hero-terminal-section">
+                    <img src="assets/images/profile.jpg" 
+                         alt="Marnix Leijder" 
+                         class="profile-image" 
+                         onclick="openModal()">
+                    <div class="terminal">
+                        <div class="terminal-header">
+                            <svg class="terminal-icon" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M20,19V7H4V19H20M20,3A2,2 0 0,1 22,5V19A2,2 0 0,1 20,21H4A2,2 0 0,1 2,19V5A2,2 0 0,1 4,3H20M13,17V15H18V17H13M9.58,13L5.57,9H8.4L11.7,12.3C12.09,12.69 12.09,13.33 11.7,13.72L8.42,17H5.59L9.58,13Z" />
+                            </svg>
+                            <span class="terminal-title">root@kali:~#</span>
+                            <div class="terminal-buttons">
+                                <div class="terminal-button minimize"></div>
+                                <div class="terminal-button maximize"></div>
+                                <div class="terminal-button close" onclick="window.open('https://www.youtube.com/watch?v=xvFZjo5PgG0&autoplay=1', '_blank')"></div>
+                            </div>
+                        </div>
+                        <div class="terminal-content">
+                            <div class="terminal-line">
+                                <div class="command-prompt">
+                                    <span>┌──(</span><span class="user">root</span><span>㉿</span><span class="hostname">kali</span><span>)-[</span><span class="directory">~</span><span>]</span>
+                                </div>
+                                <div class="command-line">
+                                    <span>└─</span><span class="prompt-symbol">$</span>whoami
+                                </div>
+                                <div class="command-output">Cybersecurity enthusiast & social engineering specialist</div>
+                            </div>
+                            <div class="terminal-line">
+                                <div class="command-prompt">
+                                    <span>┌──(</span><span class="user">root</span><span>㉿</span><span class="hostname">kali</span><span>)-[</span><span class="directory">~</span><span>]</span>
+                                </div>
+                                <div class="command-line">
+                                    <span>└─</span><span class="prompt-symbol">$</span>location
+                                </div>
+                                <div class="command-output">The Hague, The Netherlands</div>
+                            </div>
+                            <div class="terminal-line">
+                                <div class="command-prompt">
+                                    <span>┌──(</span><span class="user">root</span><span>㉿</span><span class="hostname">kali</span><span>)-[</span><span class="directory">~</span><span>]</span>
+                                </div>
+                                <div class="command-line">
+                                    <span>└─</span><span class="prompt-symbol">$</span>status
+                                </div>
+                                <div class="command-output">3rd year ISM student @ The Hague University of Applied Sciences</div>
+                            </div>
+                            <div class="terminal-line">
+                                <div class="command-prompt">
+                                    <span>┌──(</span><span class="user">root</span><span>㉿</span><span class="hostname">kali</span><span>)-[</span><span class="directory">~</span><span>]</span>
+                                </div>
+                                <div class="command-line">
+                                    <span>└─</span><span class="prompt-symbol">$</span><span class="cursor"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>./about_me</h2>
+            <div class="content-box">
+                <p>I'm a <span id="age"></span>-year-old technology enthusiast with a strong focus on IT cybersecurity, social engineering & crypto trading. Currently pursuing Information Security Management at The Hague University of Applied Sciences, I combine theoretical knowledge with practical experience through my part-time IT work.</p>
+                <p>My approach to security combines technical expertise with business acumen, allowing me to tackle both technical and commercial challenges effectively. I thrive both in team environments and independent work settings.</p>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>./experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <a href="http://schalke-it.nl/" target="_blank">
+                        <img src="assets/images/schalke.jpg" alt="Schalke IT" class="company-logo">
+                    </a>
+                    <div class="timeline-content">
+                        <h3>Junior System Administrator</h3>
+                        <p class="company">Schalke IT Network Services</p>
+                        <p class="period">May 2023 - Present</p>
+                        <ul class="skills-list">
+                            <li>Windows Server</li>
+                            <li>Hyper-V</li>
+                            <li>Active Directory</li>
+                            <li>Microsoft Exchange</li>
+                            <li>Office 365</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <a href="https://www.divd.nl/" target="_blank">
+                        <img src="assets/images/divd.jpg" alt="DIVD" class="company-logo">
+                    </a>
+                    <div class="timeline-content">
+                        <h3>Business Continuity Specialist</h3>
+                        <p class="company">DIVD Dutch Institute for Vulnerability Disclosure</p>
+                        <p class="period">Jan 2024 - Feb 2024</p>
+                        <p>Internship focused on Business Continuity Management</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                  <a href="https://www.wizzbit.nl/" target="_blank">
+                    <img src="assets/images/wizzbit.jpg" alt="Wizzbit" class="company-logo">
+                  </a>
+                    <div class="timeline-content">
+                        <h3>Frontend WordPress Developer</h3>
+                        <p class="company">Wizzbit</p>
+                        <p class="period">Oct 2021 - Apr 2022</p>
+                        <ul class="skills-list">
+                            <li>WordPress</li>
+                            <li>Avada</li>
+                            <li>Frontend Development</li>
+                            <li>HTML/CSS</li>
+                            <li>PHP</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>./skill_set</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Security & Compliance</h3>
+                    <ul>
+                        <li>Information Security Management</li>
+                        <li>GDPR (AVG)</li>
+                        <li>Risk Management</li>
+                        <li>Business Continuity Management</li>
+                        <li>Ethical Hacking (CTF)</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Technical</h3>
+                    <ul>
+                        <li>Java Development</li>
+                        <li>Network Management</li>
+                        <li>SQL Databases</li>
+                        <li>Windows Server</li>
+                        <li>Active Directory</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Web Development</h3>
+                    <ul>
+                        <li>HTML5 & CSS3</li>
+                        <li>PHP</li>
+                        <li>Symfony</li>
+                        <li>WordPress</li>
+                        <li>Frontend Development</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>./education</h2>
+            <div class="education-grid">
+                <div class="education-item">
+                  <a href="https://www.dehaagsehogeschool.nl/" target="_blank">
+                    <img src="assets/images/hhs.jpg" alt="The Hague University" class="education-logo">
+                  </a>
+                    <div class="education-content">
+                        <h3>Bachelor's Degree</h3>
+                        <p>Information Security Management</p>
+                        <p>The Hague University of Applied Sciences</p>
+                        <p>2022 - Present</p>
+                    </div>
+                </div>
+                <div class="education-item">
+                  <a href="https://www.rocmondriaan.nl/" target="_blank">
+                    <img src="assets/images/mondriaan.jpg" alt="ROC Mondriaan" class="education-logo">
+                  </a>
+                    <div class="education-content">
+                        <h3>MBO 4</h3>
+                        <p>Application Developer</p>
+                        <p>ROC Mondriaan</p>
+                        <p>2019 - 2022</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>./contact_me</h2>
+            <div class="content-box">
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/marnixleijder" target="_blank" class="social-button">
+                        <i class="fab fa-linkedin"></i>
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/marnixleijder" target="_blank" class="social-button">
+                        <i class="fab fa-github"></i>
+                        GitHub
+                    </a>
+                    <a href="mailto:marnixportfolio.paying133@passinbox.com" class="social-button">
+                        <i class="fas fa-envelope"></i>
+                        Email
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2003 - <span id="current-year"></span> Marnix Leijder | <span class="typing">sudo print $€£¥</span></p>
+    </footer>
+
+    <a href="#hero" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        const backToTop = document.querySelector('.back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        function toggleMenu() {
+            document.querySelector('.nav-menu').classList.toggle('active');
+            document.querySelector('.hamburger').classList.toggle('active');
+        }
+
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('.nav-menu').classList.remove('active');
+                document.querySelector('.hamburger').classList.remove('active');
+            });
+        });
+
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        function calculateAge() {
+            const birthday = new Date(2003, 5, 24); // Month is 0-based, so 5 = June
+            const today = new Date();
+            let age = today.getFullYear() - birthday.getFullYear();
+            
+            // Check if birthday hasn't occurred this year
+            const monthDiff = today.getMonth() - birthday.getMonth();
+            if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthday.getDate())) {
+                age--;
+            }
+            
+            document.getElementById('age').textContent = age;
+        }
+
+        calculateAge();
+
+        setInterval(() => {
+            const now = new Date();
+            if (now.getHours() === 0 && now.getMinutes() === 0 && now.getSeconds() === 0) {
+                calculateAge();
+            }
+        }, 1000);
+
+        function openModal() {
+            document.getElementById('imageModal').classList.add('active');
+            document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').classList.remove('active');
+            document.body.style.overflow = ''; // Restore scrolling
+        }
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>
