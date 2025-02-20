@@ -319,27 +319,13 @@
         document.getElementById('current-year').textContent = new Date().getFullYear();
 
         function calculateAge() {
-            const birthday = new Date(2003, 5, 24); // Month is 0-based, so 5 = June
+            const birthday = new Date(2003, 5, 24);
             const today = new Date();
             let age = today.getFullYear() - birthday.getFullYear();
-            
-            // Check if birthday hasn't occurred this year
-            const monthDiff = today.getMonth() - birthday.getMonth();
-            if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthday.getDate())) {
-                age--;
-            }
-            
+            if (today < new Date(today.getFullYear(), 5, 24)) age--;
             document.getElementById('age').textContent = age;
         }
-
-        calculateAge();
-
-        setInterval(() => {
-            const now = new Date();
-            if (now.getHours() === 0 && now.getMinutes() === 0 && now.getSeconds() === 0) {
-                calculateAge();
-            }
-        }, 1000);
+        calculateAge(); // Run once on load
 
         function openModal() {
             document.getElementById('imageModal').classList.add('active');
