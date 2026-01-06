@@ -16,6 +16,6 @@ You can visit the live version of my portfolio here: [marnixleijder.github.io](h
 ## 📫 Contact  
 - LinkedIn: [linkedin.com](https://www.linkedin.com/in/marnixleijder)
 - GitHub: [github.com/marnixleijder](https://github.com/marnixleijder)
-- Email: [marnixportfolio.paying133@passinbox.com](mailto:marnixportfolio.paying133@passinbox.com)
+- Email: [marnix@leijder-it.nl](mailto:marnix@leijder-it.nl)
 
 Feel free to explore my work and reach out!
